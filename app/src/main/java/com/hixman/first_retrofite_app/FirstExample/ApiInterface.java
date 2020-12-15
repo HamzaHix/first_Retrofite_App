@@ -7,8 +7,8 @@ import retrofit2.http.Path;
 public interface ApiInterface {
 
     // here we get specific ressource
-//    @GET("posts/1")
-//    public Call<Post> getPost();
+/*    @GET("posts/1")
+    public Call<Post> getPost();*/
 
     // if we want to get a specific resource dynamically
     @GET("posts/{id}")

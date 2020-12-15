@@ -2,7 +2,10 @@ package com.hixman.first_retrofite_app.GETRequestQUERYandPATH;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import com.hixman.first_retrofite_app.R;
 
@@ -23,6 +26,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         // define the views in the activity
         TextView Post_title1 = findViewById(R.id.Post_title1);
+        Button btn_post = findViewById(R.id.btn_post);
 
         // use Retrofit
         // create a retrofit builder
@@ -44,6 +48,17 @@ public class MainActivity2 extends AppCompatActivity {
             public void onFailure(Call<List<Post2>> call, Throwable t) {
                 Post_title1.setText(t.getMessage());
             }
+        });
+
+        // use the btn to go to the mainActivity2
+        btn_post.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Intent intent1 = new Intent("android.intent.action.MainActivity3");
+                startActivity(intent1);
+            }
+
+
         });
 
 

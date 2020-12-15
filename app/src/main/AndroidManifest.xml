@@ -19,6 +19,17 @@
         android:theme="@style/Theme.First_Retrofite_App">
 
         <activity
+            android:name=".RetrofitPOSTrequestBody.MainActivity3"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MainActivity3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".GETRequestQUERYandPATH.MainActivity2"
             android:screenOrientation="portrait">
 
